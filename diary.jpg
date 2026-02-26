@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gift No.2 ❤️</title>
+<style>
+body{
+font-family: 'Georgia', serif;
+background: linear-gradient(to bottom, #fbc2eb, #ffffff);
+text-align:center;
+margin:0;
+padding:40px;
+color:#333;
+}
+
+img{
+width:80%;
+max-width:500px;
+border-radius:20px;
+margin:20px 0;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+p{
+max-width:750px;
+margin:auto;
+font-size:20px;
+line-height:1.9;
+}
+
+button{
+padding:12px 25px;
+border-radius:30px;
+border:none;
+background:#ff6b81;
+color:white;
+font-size:18px;
+cursor:pointer;
+margin-top:25px;
+}
+
+button:hover{
+background:#ff4757;
+}
+</style>
+</head>
+<body>
+
+<h1>🎁 Gift No.2 – Your Diary 📖</h1>
+
+<img src="diary.jpg">
+
+<p>
+Iqra,  
+
+You love writing in your diary.  
+Every single day, you sit quietly and write your thoughts, your feelings, 
+your little secrets, and sometimes… about us.  
+
+You have a personal diary where our memories live.  
+Our school talks, our silly fights, our lunch moments,  
+the way we held hands and shared smiles.  
+
+That diary is not just pages and ink.  
+It is a place where your heart speaks freely.  
+It is where our story is written in your handwriting.  
+
+So I gifted you this diary because  
+I want our memories to always have a safe place.  
+
+One day when we look back,  
+we will read those pages and smile,  
+remembering how two people started their journey with pure love.  
+
+Keep writing our story.  
+And I promise, I will always give you beautiful moments to write about.
+</p>
+
+<button onclick="alert('One day, our whole life will be written in your diary ❤️')">
+Open Secret Message 💌
+</button>
+
+</body>
+</html>
