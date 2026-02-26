@@ -1,1 +1,211 @@
-<button onclick="location.href='https://giftlink.com';">Gift Button</button>
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Iqra ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  text-align: center;
+  color: white;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 36px;
+  text-shadow: 0 0 20px rgba(255,255,255,0.8);
+}
+
+.subtitle {
+  font-size: 17px;
+  margin-bottom: 20px;
+  opacity: 0.95;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.45);
+}
+
+.message-box {
+  background: rgba(255,255,255,0.2);
+  margin: 30px 20px;
+  padding: 25px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.secret-btn {
+  background: white;
+  color: #ff4d88;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.secret-btn:hover {
+  background: #ff4d88;
+  color: white;
+}
+
+#secretPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: #ff4d88;
+  padding: 30px;
+  border-radius: 25px;
+  width: 85%;
+  max-width: 320px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  z-index: 1000;
+  animation: fadeIn 0.6s ease;
+}
+
+#secretPopup button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #ff4d88;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translate(-50%, -60%);}
+  to {opacity: 1; transform: translate(-50%, -50%);}
+}
+
+.heart {
+  position: fixed;
+  bottom: -10px;
+  font-size: 18px;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {transform: translateY(0); opacity: 1;}
+  100% {transform: translateY(-800px); opacity: 0;}
+}
+
+footer {
+  margin: 30px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+
+<h1>For Iqra ❤️</h1>
+<p class="subtitle">Nine memories. One beautiful story. 🌸</p>
+
+<div class="gallery">
+  <img src="IMG20250428172247.jpg">
+  <img src="IMG20250428173359.jpg">
+  <img src="IMG20250509173134.jpg">
+  <img src="IMG20250606135523.jpg">
+  <img src="IMG20250712092400.jpg">
+  <img src="IMG20250725182725.jpg">
+  <img src="IMG20251006172747.jpg">
+  <img src="IMG20260107154659.jpg">
+  <img src="IMG20260204132123.jpg">
+</div>
+
+<div class="message-box">
+  Every picture here holds a memory…  
+  of laughter, of stolen moments,  
+  of school bunks and shared lunches.  
+
+  <br><br>
+  You turned ordinary days into something special.  
+  And honestly… I'm grateful for every second with you.  
+
+  <br><br>
+  No matter what happens in life —  
+  <strong>We'll do it together.</strong> 💕
+</div>
+
+<div class="secret-btn" onclick="openSecret()">
+  💖 Open Secret Message 💖
+</div>
+
+<div id="secretPopup">
+  Iqra…  
+
+  You are not just part of my memories,  
+  you are part of my happiness.  
+
+  Thank you for being you. 🤍  
+
+  ~ Ayan  
+
+  <br>
+  <button onclick="closeSecret()">Close</button>
+</div>
+
+<a href="gift1.html">
+<button class="secret-btn">🎁 Open Gift No.1</button>
+</a>
+
+<footer>
+  Made with love by Ayan 🤍
+</footer>
+
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "💗";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = Math.random() * 20 + 15 + "px";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}
+
+setInterval(createHeart, 800);
+
+function openSecret() {
+  document.getElementById("secretPopup").style.display = "block";
+}
+
+function closeSecret() {
+  document.getElementById("secretPopup").style.display = "none";
+}
+</script>
+
+</body>
+  </html>
